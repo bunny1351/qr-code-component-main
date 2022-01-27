@@ -1,0 +1,70 @@
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fontFamily;
+  background-color: $lightGray;
+}
+
+.container {
+  width: 80vw;
+  max-width: 400px;
+  height: 85vh;
+  max-height: 700px;
+  background-color: $White;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 10vh;
+  overflow: hidden;
+  padding: 2vh 3vw;
+
+  #qr-code {
+    width: 74vw;
+    max-width: 380px;
+    height: 50vh;
+    max-height: 400px;
+    border-radius: 1rem;
+  }
+
+  .content {
+    text-align: center;
+    margin-top: 3vh;
+
+    h2 {
+      color: $darkBlue;
+    }
+
+    p {
+      margin-top: 3vh;
+      color: $grayishBlue;
+      font-size: $paraFontSize;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 2vh 2vw;
+
+    #qr-code {
+      max-width: 345px;
+    }
+  }
+}
+
+footer {
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+  font-family: fantasy;
+  margin-top: 5vh;
+
+  a {
+    color: hsl(320, 98%, 52%);
+  }
+}
